@@ -65,7 +65,8 @@
   --btn-primary-bg: var(--colors-primary);
   --btn-primary-hover-bg: var(--colors-primary-hover);
   --btn-primary-color: var(--colors-on-primary);
-  --btn-height-default: var(--sizing-form-element-default);
+  --btn-default-height: var(--sizing-form-element-default);
+  --btn-lg-height: var(--sizing-form-element-large);
 
   --input-default-border-color: rgba(0, 0, 0, 0.3);
   --input-default-focus-border-color: var(--colors-themes-500);

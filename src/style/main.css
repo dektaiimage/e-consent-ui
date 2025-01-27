@@ -20,11 +20,18 @@ input {}
   font-size: var(--font-size-sm);
   background-color: var(--btn-default-bg);
   color: var(--btn-default-color);
-  height: var(--btn-height-default);
   min-width: var(--btn-default-min-width);
   border-radius: var(--btn-default-radius);
   padding: var(--btn-default-spacing-y) var(--btn-default-spacing-x);
   border: var(--btn-default-border-sizing) var(--btn-default-border-style) var(--btn-default-border-color);
+}
+
+.btn:not(.--lg) {
+  height: var(--btn-default-height);
+}
+
+.btn.--lg {
+  height: var(--btn-lg-height);
 }
 
 .btn.--primary {
@@ -178,7 +185,7 @@ input:focus-visible {}
   color: #dc423b;
 }
 
-.app-content{
+.app-content {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-large);
@@ -191,4 +198,84 @@ input:focus-visible {}
   padding: var(--spacing-default);
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: var(--radius-default);
+}
+
+.ui-table {
+  border-spacing: 0;
+
+  :is(th) {
+    padding: var(--spacing-default);
+    border-block-width: 1px 1px;
+  }
+
+  :is(td) {
+    padding: var(--spacing-sm);
+    border-block-width: 1px 0;
+  }
+
+  :is(td, th) {
+    border-inline-width: 1px 0;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.05);
+
+    &:last-of-type {
+      border-inline-end-width: 1px;
+    }
+  }
+
+  th {
+    background: var(--colors-themes-200);
+
+    &:first-of-type {
+      border-start-start-radius: var(--radius-default);
+    }
+
+    &:last-of-type {
+      border-start-end-radius: var(--radius-default);
+    }
+  }
+
+  tr {
+    &:last-of-type {
+      td {
+        border-block-width: 1px;
+
+        &:first-of-type {
+          border-end-start-radius: var(--radius-default);
+        }
+
+        &:last-of-type {
+          border-end-end-radius: var(--radius-default);
+        }
+      }
+    }
+
+    &:nth-of-type(odd) {
+      background: #fff;
+    }
+
+    &:nth-of-type(even) {
+      background: #fafafa;
+    }
+  }
+}
+
+.history-table {
+  table-layout: fixed;
+
+  .col-doc-name {}
+
+  .col-secret-level {
+    width: 10px;
+    white-space: nowrap;
+  }
+
+  .col-create-by {
+    width: 250px;
+  }
+
+  .col-date-time {
+    width: 10px;
+    white-space: nowrap;
+  }
 }
