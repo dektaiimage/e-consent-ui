@@ -1,0 +1,88 @@
+:root {
+  --colors-themes-100: #F0FDFF;
+  --colors-themes-200: #C0E8FF;
+  --colors-themes-300: #96D3FF;
+  --colors-themes-400: #549EE6;
+  --colors-themes-500: #3383D9;
+  --colors-themes-600: #1268CC;
+  --colors-themes-700: #0F55A6;
+  --colors-themes-800: #0C4180;
+  --colors-themes-900: #062A57;
+  --colors-primary: var(--colors-themes-600);
+  --colors-primary-hover: var(--colors-themes-700);
+  --colors-on-primary: #ffffff;
+  --colors-bg-app: var(--colors-themes-100);
+  --colors-text-base: #202326;
+  --colors-text-mid: #39434f;
+  --colors-text-low: #a0aec0;
+  --colors-text-title: var(--colors-themes-700);;
+
+  --font-size-xxs: 10px;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 36px;
+  --font-size-5xl: 48px;
+
+  --radius-default: 10px;
+  --radius-large: 14px;
+  --radius-sm: 8px;
+  --radius-xs: 4px;
+
+  --border-form-element-sizing: 1px;
+  --border-form-element-style: solid;
+  --border-form-element-color: rgba(0, 0, 0, 0.1);
+
+  --sizing-form-element-default: 36px;
+  --sizing-form-element-large: 42px;
+  --sizing-form-element-sm: 28px;
+  --sizing-app-container-width: 1280px;
+
+  --spacing-default: 12px;
+  --spacing-large: 16px;
+  --spacing-sm: 8px;
+  --spacing-xs: 6px;
+  --spacing-xxs: 4px;
+  --spacing-form-element-large: 52px;
+  --spacing-form-element-sm: 32px;
+  --spacing-form-element-x: 5px;
+  --spacing-form-element-y: 10px;
+
+
+  --btn-default-bg: #efefef;
+  --btn-default-color: var(--colors-text-base);
+  --btn-default-min-width: var(--btn-height);
+  --btn-default-radius: var(--radius-default);
+  --btn-default-spacing-x: var(--spacing-form-element-x);
+  --btn-default-spacing-y: var(--spacing-form-element-y);
+  --btn-default-border-sizing: var(--border-form-element-sizing);
+  --btn-default-border-style: var(--border-form-element-style);
+  --btn-default-border-color: rgba(0, 0, 0, 0.1);
+  --btn-primary-bg: var(--colors-primary);
+  --btn-primary-hover-bg: var(--colors-primary-hover);
+  --btn-primary-color: var(--colors-on-primary);
+  --btn-height-default: var(--sizing-form-element-default);
+
+  --input-default-border-color: rgba(0, 0, 0, 0.3);
+  --input-default-focus-border-color: var(--colors-themes-500);
+  --input-default-radius: var(--radius-default);
+  --input-default-border-sizing: var(--border-form-element-sizing);
+  --input-default-border-style: var(--border-form-element-style);
+  --input-default-height: var(--sizing-form-element-default);
+  --input-lg-height: var(--sizing-form-element-large);
+  --input-default-outline: var(--colors-themes-400);
+
+
+  --login-bg-color: var(--colors-themes-300);
+  --login-content-padding: 18px;
+  --login-radius: var(--radius-default);
+  --login-max-width: 350px;
+  --login-cover-height: 150px;
+  --login-cover-radius: var(--radius-default);
+  --login-title: var(--font-size-3xl);
+  --login-sub-title: var(--font-size-sm);
+}

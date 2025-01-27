@@ -1,0 +1,50 @@
+@import url(variables.css);
+
+.login-content {
+  max-width: var(--login-max-width);
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* background-color: var(--login-bg-color); */
+  padding: var(--login-content-padding);
+  border-radius: var(--login-radius);
+  /* box-shadow: 0px 1px 5px rgb(0 0 0 / 15%), 0px 2px 4px rgb(0 0 0 / 15%) */
+}
+
+.login-content .login-cover {
+  height: var(--login-cover-height);
+  overflow: hidden;
+  width: 100%;
+  border-radius: var(--login-cover-radius);
+}
+
+.login-content .login-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.login-title {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  font-size: var(--login-sub-title);
+  color: var(--colors-text-mid);
+}
+
+.login-title h1 {
+  font-size: var(--login-title);
+  color: var(--colors-text-title);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-default);
+}
+
+.login-content .btn {
+  width: 100%;
+}
