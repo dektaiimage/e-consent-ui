@@ -1,5 +1,3 @@
-@import url(variables.css);
-
 .login-content {
   max-width: var(--login-max-width);
   width: 100%;
