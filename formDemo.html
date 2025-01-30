@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>E-Consent : Manage Form</title>
+  <link rel="stylesheet" href="src/style/main.css">
+  <link rel="stylesheet" href="src/style/template.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="app-logo">
+        <img src="src/assets/images/logoApp.svg" />
+      </div>
+      <nav class="app-menu">
+        <a class="menu-item" href="index.html"><i class="material-symbols-outlined">contract</i>
+          <label>History</label>
+        </a>
+        <a class="menu-item --active" href="template.html"><i class="material-symbols-outlined">cards_star</i>
+          <label>Template</label>
+        </a>
+        <!-- <a>บันทึก</a> -->
+      </nav>
+      <a class="menu-item logout-action" href="login.html">
+        <i class="material-symbols-outlined">logout</i>
+        <label>logout</label>
+      </a>
+    </header>
+    <!-- <nav class="nav-page">
+      <a class="nav-page-item">Form list</a>/
+      <a class="nav-page-item --current">Manage Form</a>
+    </nav> -->
+    <div class="app-content">
+      <div class="form-title">X002.หนังสือแสดงเจตจำนงตรวจพิเศษทางรังสี</div>
+      <div class="form-details">X002.หนังสือแสดงเจตจำนงตรวจพิเศษทางรังสี</div>
+      <form class="form-content --vertical">
+
+        <div class="form-item">
+          <label>ชั้นความลับ</label>
+          <select>
+            <option>ชั้นความลับ 1</option>
+            <option>ชั้นความลับ 2</option>
+            <option>ชั้นความลับ 3</option>
+            <option>ชั้นความลับ 4</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label>หัวข้อคำถามแบบข้อความ</label>
+          <input class="" type="text" />
+        </div>
+        <div class="form-item">
+          <label>หัวข้อคำถามแบบรรยาย</label>
+          <textarea rows="5"></textarea>
+        </div>
+        <div class="form-item">
+          <label>หัวข้อคำถามแบบตัวเลือกรายการ</label>
+          <select>
+            <option>ตัวเลือก 1</option>
+            <option>ตัวเลือก 2</option>
+            <option>ตัวเลือก 3</option>
+            <option>ตัวเลือก 4</option>
+          </select>
+        </div>
+        <div class="form-item">
+          <label>หัวข้อคำถามแบบ Radio</label>
+          <div class="radio-group">
+            <label class="radio-item" for="html">
+              <input type="radio" id="html" name="fav_language" value="html"> HTML
+            </label>
+            <label class="radio-item" for="css">
+              <input type="radio" id="css" name="fav_language" value="css"> CSS
+            </label>
+            <label class="radio-item" for="javascript">
+              <input type="radio" id="javascript" name="fav_language" value="javascript"> JavaScript
+            </label>
+          </div>
+        </div>
+        <div class="form-item">
+          <label>หัวข้อคำถามแบบ checkbox</label>
+          <div class="checkbox-group">
+            <label class="checkbox-item" for="vehicle1">
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> I have a BikeI have a BikeI have a
+              BikeI have a BikeI have a BikeI have a BikeI have a BikeI have a BikeI haveI have a BikeI have a BikeI
+              have a BikeI have a BikeI have a BikeI have a BikeI have a BikeI have a BikeI have a BikeI have a BikeI
+              have a BikeI have a Bike
+            </label>
+            <label class="checkbox-item" for="vehicle2">
+              <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"> I have a car
+            </label>
+            <label class="checkbox-item" for="vehicle3">
+              <input type="checkbox" id="vehicle3" name="vehicle3" value="Bike"> I have a Boat
+            </label>
+          </div>
+        </div>
+        <div class="form-item">
+          <label>หัวข้อคำถามแบบรูป</label>
+          <div class="input-image">
+            <canvas></canvas>
+            <input type="hidden">
+            <div class="input-image-control">
+              <button class="btn-icon" type="button" title="cancel"><i class="material-symbols-outlined">cancel</i></button>
+              <button class="btn-icon" type="button" title="folder_open"><i class="material-symbols-outlined">folder_open</i></button>
+              <button class="btn-icon" type="button" title="photo_library"><i class="material-symbols-outlined">photo_library</i></button>
+              <button class="btn-icon" type="button" title="photo_camera"><i class="material-symbols-outlined">photo_camera</i></button>
+            </div>
+          </div>
+        </div>
+        <div class="control-page">
+          <button class="btn" type="button">กลับ</button>
+          <button class="btn" type="button" data-rel-back="">พิมพ์</button>
+          <button class="btn" type="button">ลบ</button>
+          <button class="btn" type="reset">คืนค่า</button>
+          <button class="btn" type="submit">บันทึก</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

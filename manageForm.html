@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>E-Consent : Manage Form</title>
+  <link rel="stylesheet" href="src/style/main.css">
+  <link rel="stylesheet" href="src/style/template.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="app-logo">
+        <img src="src/assets/images/logoApp.svg" />
+      </div>
+      <nav class="app-menu">
+        <a class="menu-item" href="index.html"><i class="material-symbols-outlined">contract</i>
+          <label>History</label>
+        </a>
+        <a class="menu-item --active" href="template.html"><i class="material-symbols-outlined">cards_star</i>
+          <label>Template</label>
+        </a>
+        <!-- <a>บันทึก</a> -->
+      </nav>
+      <a class="menu-item logout-action" href="login.html">
+        <i class="material-symbols-outlined">logout</i>
+        <label>logout</label>
+      </a>
+    </header>
+    <nav class="nav-page">
+      <a class="nav-page-item">Form list</a>/
+      <a class="nav-page-item --current">Manage Form</a>
+    </nav>
+    <div class="app-content">
+      <form class="form-content">
+        <div class="form-item --vertical">
+          <label>ชื่อเอกสาร</label>
+          <input class="" type="text" />
+        </div>
+        <div class="form-item --vertical">
+          <label>รายละเอียด</label>
+          <textarea rows="5"></textarea>
+        </div>
+        <div class="row">
+          <div class="form-item --vertical" style="flex: 1;">
+            <label>รหัสเอกสาร</label>
+            <input class="" type="text" />
+          </div>
+          <div class="form-item --vertical">
+            ชั้นความลับ
+            <select>
+              <option>ชั้นความลับ 1</option>
+              <option>ชั้นความลับ 2</option>
+              <option>ชั้นความลับ 3</option>
+              <option>ชั้นความลับ 4</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-item --vertical">
+          <label>สิทธิ์ผู้ใช้งาน</label>
+          <input class="" type="text" />
+        </div>
+        <div class="form-item --vertical">
+          <label>สิทธิ์ผู้ใช้งานตามตำแหน่ง</label>
+          <input class="" type="text" />
+        </div>
+        <div class="form-item --vertical">
+          <label>สิทธิ์ผู้ใช้งานตามแผนก</label>
+          <input class="" type="text" />
+        </div>
+        <div class="form-item --vertical">
+          <label>สิทธิ์ผู้ใช้งานตามหน่วยงาน</label>
+          <input class="" type="text" />
+        </div>
+        <div class="form-group">
+          <div class="form-item --vertical">
+            <label>หัวข้อ</label>
+            <input class="" type="text" />
+          </div>
+          <div class="form-item --vertical">
+            <label>รายละเอียด</label>
+            <textarea rows="5"></textarea>
+          </div>
+          <div class="form-item --vertical">
+            รูปแบบคำตอบ
+            <select name="topic.type">
+              <option value="1" data-choice="">ข้อความ</option>
+              <option value="2" data-choice="">บรรยาย</option>
+              <option value="3" data-choice="true">เลือกตอบ</option>
+              <option value="4" data-choice="true">เลือกตอบแบบย่อ</option>
+              <option value="5" data-choice="true">เลือกตอบหลายตัวเลือก</option>
+              <option value="6" data-choice="">รูป</option>
+            </select>
+          </div>
+          <div class="form-item --vertical">
+            <label>ข้อมูลตัวเลือก</label>
+            <input class="" type="text" />
+            <input class="" type="text" />
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-item --vertical">
+            <label>หัวข้อ</label>
+            <input class="" type="text" />
+          </div>
+          <div class="form-item --vertical">
+            <label>รายละเอียด</label>
+            <textarea rows="5"></textarea>
+          </div>
+          <div class="form-item --vertical">
+            รูปแบบคำตอบ
+            <select name="topic.type">
+              <option value="1" data-choice="">ข้อความ</option>
+              <option value="2" data-choice="">บรรยาย</option>
+              <option value="3" data-choice="true">เลือกตอบ</option>
+              <option value="4" data-choice="true">เลือกตอบแบบย่อ</option>
+              <option value="5" data-choice="true">เลือกตอบหลายตัวเลือก</option>
+              <option value="6" data-choice="">รูป</option>
+            </select>
+          </div>
+          <div class="form-item --vertical">
+            <label>ข้อมูลตัวเลือก</label>
+            <input class="" type="text" />
+            <input class="" type="text" />
+          </div>
+        </div>
+        <div class="form-item --vertical">
+          <label>Jasper file</label>
+          <input type="file" id="myfile" name="myfile">
+        </div>
+        <div class="control-page">
+          <button class="btn" type="button" data-rel-back="">ยกเลิก</button>
+          <button class="btn" type="reset">คืนค่า</button>
+          <button class="btn" type="submit">บันทึก</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
