@@ -18,8 +18,11 @@
   /* font-size: var(--font-size-sm); */
   outline: var(--colors-themes-200) 0px solid;
   transition: all linear .05s;
+  text-decoration: none;
+
   * {
     cursor: pointer;
+    text-decoration: none;
   }
 
   i {
