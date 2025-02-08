@@ -42,7 +42,10 @@ input {}
 input[type='text'],
 input[type='password'],
 input[type='number'],
-input[type='type="search'],
+/*input[type='type="search'],*/
+input[type='search'],
+input[type='datetime-local'],
+input[type='date'],
 select,
 textarea {
   border-radius: var(--input-default-radius);
@@ -62,7 +65,10 @@ textarea {
 input[type='text'],
 input[type='password'],
 input[type='number'],
-input[type='type="search'],
+/*input[type='type="search'],*/
+input[type='search'],
+input[type='datetime-local'],
+input[type='date'],
 select {
   height: var(--input-default-height);
   min-height: var(--input-default-height);
