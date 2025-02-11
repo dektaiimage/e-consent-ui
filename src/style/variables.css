@@ -8,6 +8,10 @@
   --colors-themes-700: #0F55A6;
   --colors-themes-800: #0C4180;
   --colors-themes-900: #062A57;
+  --colors-success: #d0fad3;
+  --colors-on-success: #27652c;
+  --colors-danger: #ffcdcd;
+  --colors-on-danger: #773e3e;
   --colors-primary: var(--colors-themes-600);
   --colors-primary-hover: var(--colors-themes-700);
   --colors-on-primary: #ffffff;
@@ -91,4 +95,8 @@
   --login-cover-radius: var(--radius-default);
   --login-title: var(--font-size-3xl);
   --login-sub-title: var(--font-size-sm);
+
+  --form-content-width: 800px;
+  --form-item-code-width: 120px;
+  --form-item-label-width: 1;
 }

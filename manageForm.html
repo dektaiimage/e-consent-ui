@@ -75,14 +75,16 @@
           <input class="" type="text" />
         </div>
         <div class="form-group">
-          <input type="hidden" name="topic.id" value="${i.id}"/>
-          <div class="row">
+          <input type="hidden" name="topic.id" value="${i.id}" />
+          <div class="row --code-label">
             <div class="form-item --vertical">
               <label>หัวข้อ</label>
-              <input name="topic.code" value="${i.code}" class="" type="text" placeholder="[CODE]" data-rel-auto-select size="6" />
+              <input name="topic.code" value="${i.code}" class="" type="text" placeholder="[CODE]" data-rel-auto-select
+                size="6" />
             </div>
-            <div class="form-item --vertical" style="flex: 1;">
-              <input name="topic.label" value="${i.label}" data-rel-del-key-auto class="" type="text" data-rel-auto-select />
+            <div class="form-item --vertical">
+              <input name="topic.label" value="${i.label}" data-rel-del-key-auto class="" type="text"
+                data-rel-auto-select />
             </div>
           </div>
           <div class="form-item --vertical">
@@ -100,48 +102,67 @@
               <option value="6" data-choice="">รูป</option>
             </select>
           </div>
-          <div data-pane="topic.choice" data-role="sort" data-sort-items=":not([data-rel-add])" class="form-item --vertical ui-sortable">
-    
-        <label>ข้อมูลตัวเลือก</label>
-        <div data-rel-del="" class="ui-sortable-handle">
-          <input type="hidden" value="13" data-rel-topic-index="topic.choice" data-rel-topic-name="id" class="ui-sortable-handle" style="">
-          <input type="text" value="1" data-rel-topic-index="topic.choice" data-rel-topic-name="code" placeholder="[CODE]" data-rel-auto-select="" class="ui-sortable-handle">
-          <input type="text" value="1" data-rel-topic-index="topic.choice" data-rel-topic-name="label" data-rel-del-key-auto="" data-rel-auto-select="" class="ui-sortable-handle">
-        </div>
-        
-            
+          <div data-pane="topic.choice" data-role="sort" data-sort-items=":not([data-rel-add])"
+            class="form-item --vertical ui-sortable">
 
-        <div data-rel-del="" class="ui-sortable-handle">
-          <input type="hidden" value="14" data-rel-topic-index="topic.choice" data-rel-topic-name="id" class="ui-sortable-handle" style="">
-          <input type="text" value="2" data-rel-topic-index="topic.choice" data-rel-topic-name="code" placeholder="[CODE]" data-rel-auto-select="" class="ui-sortable-handle">
-          <input type="text" value="2" data-rel-topic-index="topic.choice" data-rel-topic-name="label" data-rel-del-key-auto="" data-rel-auto-select="" class="ui-sortable-handle">
-        </div>
-        
-            
+            <label>ข้อมูลตัวเลือก</label>
 
-        <div data-rel-del="" class="ui-sortable-handle">
-          <input type="hidden" value="12" data-rel-topic-index="topic.choice" data-rel-topic-name="id" class="ui-sortable-handle" style="">
-          <input type="text" value="3" data-rel-topic-index="topic.choice" data-rel-topic-name="code" placeholder="[CODE]" data-rel-auto-select="" class="ui-sortable-handle">
-          <input type="text" value="3" data-rel-topic-index="topic.choice" data-rel-topic-name="label" data-rel-del-key-auto="" data-rel-auto-select="" class="ui-sortable-handle">
-        </div>
-        
-            
+            <div class="row --code-label" data-rel-del="" class="ui-sortable-handle">
+              <input type="hidden" value="13" data-rel-topic-index="topic.choice" data-rel-topic-name="id"
+                class="ui-sortable-handle" style="">
+              <div class="form-item --vertical">
+                <input type="text" value="1" data-rel-topic-index="topic.choice" data-rel-topic-name="code"
+                  placeholder="[CODE]" data-rel-auto-select="" class="ui-sortable-handle">
+              </div>
+              <div class="form-item --vertical">
+                <input type="text" value="1" data-rel-topic-index="topic.choice" data-rel-topic-name="label"
+                  data-rel-del-key-auto="" data-rel-auto-select="" class="ui-sortable-handle">
+              </div>
+            </div>
 
-        <div data-rel-del="" class="ui-sortable-handle">
-          <input type="hidden" value="21" data-rel-topic-index="topic.choice" data-rel-topic-name="id" class="ui-sortable-handle" style="">
-          <input type="text" value="4" data-rel-topic-index="topic.choice" data-rel-topic-name="code" placeholder="[CODE]" data-rel-auto-select="" class="ui-sortable-handle">
-          <input type="text" value="4" data-rel-topic-index="topic.choice" data-rel-topic-name="label" data-rel-del-key-auto="" data-rel-auto-select="" class="ui-sortable-handle">
-        </div>
-        
-        
+            <div data-rel-del="" class="ui-sortable-handle">
+              <input type="hidden" value="14" data-rel-topic-index="topic.choice" data-rel-topic-name="id"
+                class="ui-sortable-handle" style="">
+              <input type="text" value="2" data-rel-topic-index="topic.choice" data-rel-topic-name="code"
+                placeholder="[CODE]" data-rel-auto-select="" class="ui-sortable-handle">
+              <input type="text" value="2" data-rel-topic-index="topic.choice" data-rel-topic-name="label"
+                data-rel-del-key-auto="" data-rel-auto-select="" class="ui-sortable-handle">
+            </div>
 
-        <div data-rel-add="">
-          <input type="hidden" value="" data-rel-topic-index="topic.choice" data-rel-topic-name="id" class="ui-sortable-handle" style="">
-          <input type="text" value="" data-rel-topic-index="topic.choice" data-rel-topic-name="code" placeholder="[CODE]" data-rel-auto-select="" class="ui-sortable-handle">
-          <input type="text" value="" data-rel-topic-index="topic.choice" data-rel-topic-name="label" data-rel-del-key-auto="" data-rel-auto-select="" class="ui-sortable-handle">
-        </div>
-    
-  </div>
+
+
+            <div data-rel-del="" class="ui-sortable-handle">
+              <input type="hidden" value="12" data-rel-topic-index="topic.choice" data-rel-topic-name="id"
+                class="ui-sortable-handle" style="">
+              <input type="text" value="3" data-rel-topic-index="topic.choice" data-rel-topic-name="code"
+                placeholder="[CODE]" data-rel-auto-select="" class="ui-sortable-handle">
+              <input type="text" value="3" data-rel-topic-index="topic.choice" data-rel-topic-name="label"
+                data-rel-del-key-auto="" data-rel-auto-select="" class="ui-sortable-handle">
+            </div>
+
+
+
+            <div data-rel-del="" class="ui-sortable-handle">
+              <input type="hidden" value="21" data-rel-topic-index="topic.choice" data-rel-topic-name="id"
+                class="ui-sortable-handle" style="">
+              <input type="text" value="4" data-rel-topic-index="topic.choice" data-rel-topic-name="code"
+                placeholder="[CODE]" data-rel-auto-select="" class="ui-sortable-handle">
+              <input type="text" value="4" data-rel-topic-index="topic.choice" data-rel-topic-name="label"
+                data-rel-del-key-auto="" data-rel-auto-select="" class="ui-sortable-handle">
+            </div>
+
+
+
+            <div data-rel-add="">
+              <input type="hidden" value="" data-rel-topic-index="topic.choice" data-rel-topic-name="id"
+                class="ui-sortable-handle" style="">
+              <input type="text" value="" data-rel-topic-index="topic.choice" data-rel-topic-name="code"
+                placeholder="[CODE]" data-rel-auto-select="" class="ui-sortable-handle">
+              <input type="text" value="" data-rel-topic-index="topic.choice" data-rel-topic-name="label"
+                data-rel-del-key-auto="" data-rel-auto-select="" class="ui-sortable-handle">
+            </div>
+
+          </div>
         </div>
         <div class="form-group">
           <div class="form-item --vertical">

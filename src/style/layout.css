@@ -195,13 +195,26 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 500px;
+  max-width: var(--form-content-width);
   margin: auto;
   gap: var(--spacing-large);
 
-  >.row {
+  .row {
     display: flex;
     gap: var(--spacing-default);
+    .form-item{
+      margin-top: auto;
+    }
+    &.--code-label{
+      .form-item{
+        &:first-of-type{
+          width: var(--form-item-code-width);
+        }
+        &:last-of-type{
+          flex: var(--form-item-label-width);;
+        }
+      }
+    }
   }
 
   .form-group {
