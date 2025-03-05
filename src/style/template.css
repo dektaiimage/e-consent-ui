@@ -6,6 +6,7 @@
 
 .form-list-item {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--spacing-sm);
   align-items: center;
   background-color: #fff;
@@ -27,6 +28,11 @@
 
   i {
     color: var(--colors-icon);
+  }
+
+  .-full {
+      flex-basis: 100%;
+      padding-left: 30px;
   }
 
   &:hover {

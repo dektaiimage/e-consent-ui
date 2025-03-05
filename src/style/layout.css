@@ -120,6 +120,10 @@ body {
   font-size: 26px;
 }
 
+.app-separator {
+    flex: auto;
+}
+
 .logout-action {
   margin-left: auto;
 }
