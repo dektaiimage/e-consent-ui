@@ -10,6 +10,7 @@
 
   .error-image {
     width: 40%;
+    cursor: pointer;
 
     img {
       width: 100%;
@@ -27,6 +28,11 @@
       font-size: 64px;
       font-weight: 900;
       font-style: italic;
+    }
+
+    .error-message {
+      font-size: 32px;
+      /* margin-bottom: auto; */
     }
 
     .error-detail {
