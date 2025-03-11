@@ -249,6 +249,10 @@ body {
       .radio-group {
         align-items: flex-start;
       }
+      > .--details {
+        margin-top: 0;
+        padding-left: 40px;
+      }
     }
   }
 }
