@@ -8,6 +8,10 @@ body {
   padding: 0 var(--spacing-default);
 }
 
+.hide {
+    display: none;
+}
+
 .app-container {
   max-width: var(--sizing-app-container-width);
   min-height: 100dvh;
