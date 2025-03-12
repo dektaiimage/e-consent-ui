@@ -217,6 +217,10 @@ input::file-selector-button {
   gap: var(--spacing-xxs);
   box-sizing: border-box;
 
+  > div {
+      text-align: center;
+  }
+
   canvas {
     cursor: crosshair;
     /* background-color: #fff; */

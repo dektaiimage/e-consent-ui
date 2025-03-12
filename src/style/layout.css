@@ -213,13 +213,20 @@ body {
     .form-item{
       margin-top: auto;
     }
-    &.--code-label{
+    &.--code-label, &.--label-label{
       .form-item{
         &:first-of-type{
           width: var(--form-item-code-width);
         }
         &:last-of-type{
           flex: var(--form-item-label-width);;
+        }
+      }
+    }
+    &.--label-label{
+      .form-item{
+        &:first-of-type{
+          width: calc(var(--form-item-code-width) * 2);
         }
       }
     }
