@@ -150,6 +150,7 @@ body {
 
 .filter-content {
   display: flex;
+  flex-flow: row wrap;
   gap: var(--spacing-large);
   background-color: #fff;
   /* background-color: var(--colors-themes-100); */
@@ -158,6 +159,13 @@ body {
   border: 1px dashed var(--colors-themes-300);
   border-radius: var(--radius-default);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.075);
+  .--breakline {
+      flex-basis: 100%;
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: none;
+  }
 }
 
 .history-table {
